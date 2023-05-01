@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style8.css">
+    <title>Utilitaires</title>
+    <script type="text/javascript" src="infobulle.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    
+
+<header class="main-head">
+    <nav>
+        <h1 id="logo"> <a href="madaguide.html">MadaGuide</a></h1>
+        <ul>
+            <li><a href="martinique.html">La Martinique</a></li>
+            <li><a href="communes.html">Les Communes</a></li>
+            <li><a href="pourquoi.html">To-Do list</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Utilitaires</h2>
+    <h3>MadaGuide a compilé, pour vous ,des utilitaires dynamiques qui simplifiront la planification de votre voyage :</h3>
+    <li class="tab"><a href="#monnaie">Convertiseur Euro/Dollars/Livres Sterling</a></li><br>
+    <li class="tab"><a href="#fuseau_h">Date et Heure en direct</a></li><br>
+    <li class="tab"><a href="#meteo">Météo en direct</a></li><br>
+    <li class="tab"><a href="#carte">Carte Intéractive</a></li><br>
+    
+</section>
+
+<main>
+    <div class="btn">
+        <img src="Images/flèche1.png" alt="Flèche" class="icone">
+        <script>const btn = document.querySelector('.btn');
+  
+          btn.addEventListener('click', () => {
+          
+              window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth"
+              })
+          
+          })</script>
+        </div>
+ 
+ <h3 class="titre" id="table">MadaGuide a compilé, pour vous ,des utilitaires dynamiques qui simplifiront la planification de votre voyage :</h3>
+ <br>
+ <ul style="list-style-type: circle">
+    
+    <li class="tab"><a href="#monnaie">Convertiseur Euro/Dollars/Livres Sterling</a></li>
+    <li class="tab"><a href="#fuseau_h">Date et Heure en direct</a></li>
+    <li class="tab"><a href="#meteo">Météo en direct</a></li>
+    <li class="tab"><a href="#carte">Carte Intéractive</a></li>
+ </ul>
+ <br>
+
+ <div id="monnaie"><h3 class="titre">Convertisseur</h3><br>
+ <p>Ci-dessous, nous vous mettons à disposition un convertisseur euro-dollar-livres sterling</p>
+ <br>
+ <div class="form-group">
+    <label>Euros</label>
+    <input id="euros" type="number" placeholder="euros">
+ </div>
+ <br>
+ <div class="form-group">
+    <label>Dollars</label>
+    <input id="dollars" type="number" placeholder="dollars">
+ </div>
+ <br>
+ <div class="form-group">
+    <label>Livres sterling</label>
+    <input id="livres" type="number" placeholder="livres">
+ </div>
+ <script>let euros = document.getElementById("euros");
+    let dollars = document.getElementById("dollars");
+    let livres = document.getElementById("livres");
+    
+    euros.addEventListener("input", function(){convPoids(this.id, this.value);});
+    dollars.addEventListener("input", function(){convPoids(this.id, this.value);});
+    livres.addEventListener("input", function(){convPoids(this.id, this.value);});
+    
+    function convPoids(id, valeur){
+        if(id == "euros"){
+            dollars.value = valeur * 1.07;
+            livres.value = valeur * 0.88;
+        }else if(id == "dollars"){
+            euros.value = valeur * 0.93;
+            livres.value = valeur * 0.82;
+        }else if(id == "livres"){
+            euros.value = valeur * 1.14;
+            dollars.value = valeur * 1.22;
+        }
+    }</script>
+ </div>
+ <br>
+ <div id="fuseau_h"><h3 class="titre">Date et Heure en direct</h3><br>
+ <br>
+ <p class="heure">Voici la date et l'heure en direct de la Martinique :</p>
+ <script type="text/javascript">
+ 
+    function afficher() {
+    var jours = ["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
+    var mois = ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"]
+    var offsetUTC = -4,
+      lD = new Date();
+      oD = new Date();
+      oD.setHours(lD.getUTCHours()+offsetUTC);
+    var m=oD.getMinutes();
+     
+    if(m <= 9) {m = "0" + m;}
+     
+      document.getElementById('autre').innerHTML = "En Martinique, nous sommes le: " + jours[oD.getDay()] +" " + oD.getDate() + " " + mois[oD.getMonth()] +" "+oD.getFullYear() + ",<br>il est " + oD.getHours() + ":" + m;
+    }
+     
+    window.onload=function() {
+      afficher();
+      setInterval(afficher,1000);
+    }
+    </script>
+ </div>
+     
+    <div id="autre"style="font:20px Palatino; color: #fff; text-align:center"></div>
+ <br>
+ <div id="meteo"><h3 class="titre">Météo en direct</h3><br>
+ <p class="meteo">Voici la météo de la Martinique en °C (degrés Celsius)</p>
+ <br>
+ <div id="ww_f81910a1be14e" v='1.3' loc='auto' a='{"t":"responsive","lang":"fr","sl_lpl":1,"ids":["wl7542"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"7"}'>Weather Data Source: <a href="https://meteolongue.com/" id="ww_f81910a1be14e_u" target="_blank">meteolongue.com</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_f81910a1be14e"></script>
+ 
+ <br>
+ <div id="carte"><h3 class="titre">Carte Intéractive</h3><br>
+  <p class="txt_carte">Voici, en exclusivité, une carte intéractive de la Martinique à partir de Google Maps.</p>
+  <br>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494129.7663897029!2d-61.34344795356832!3d14.63385770266713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c6aa0f90066070d%3A0xe1001b1217afe7b0!2sMartinique!5e0!3m2!1sfr!2sfr!4v1681330013097!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+ </a>
+
+ 
+
+ 
+</main>
+
+</body>
+</html>

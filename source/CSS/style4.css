@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1{
+    font-size: 2.6rem;
+}
+
+h2{
+    font-size: 4.8rem;
+}
+
+h3{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h4, h5{
+    font-size: 2.8rem;
+}
+
+li,button{
+    font-size: 2rem;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+
+.main-head{
+    background: #db0000;
+    color:white
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    background-color: #db0000;
+    color:black
+}
+
+nav{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#logo{
+    flex: 2 1 40rem;
+    font-family: 'Lato', sans-serif, cursive;
+}
+
+.hero{
+    min-height: 90vh;
+    background: linear-gradient(rgb(0,0,0,0.5), transparent),url("../Images/fond2.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h3 {
+    padding: 4rem;
+}
+button{
+    padding: 2rem 6rem;
+    background: #db0000;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+@media  screen and (max-width: 885px) {
+    html{
+        font-size: 45%;
+    }
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 2rem;
+    }
+}
+
+main{
+    max-width: 650px;
+    margin: 80px auto;
+    font-size: 20px;
+}
+.intro {
+    text-align: center;
+    font-size: 35px;
+}
+
+.nav_links{
+    color: yellow;
+}
+
+.contact{
+    color: yellow;
+}
+
+.merci{
+    text-align: center;
+}
+
+#conteneur {
+    column-span: 100px;
+    column-count: 4;
+    
+  }
+
+#conteneur li {
+    font-size: 16.5px;
+}
+
+.btn {
+    height: 100px;
+    width: 100px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.icone {
+    width: 50px;
+}
+
+.titre{
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+ }
+
+ .info{
+    font-size: 14.5px;
+    text-align: center;
+ }
+
+ .image{
+    width: 640px;
+    height: 380px;
+ }
+
+ .txt_image{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+ }

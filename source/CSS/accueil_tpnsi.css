@@ -1,0 +1,62 @@
+ 
+h1
+{
+font-family: Trebuchet MS;
+text-decoration:underline;
+text-align: center;
+}
+p
+{
+text-align: center;
+font-family:Georgia
+}
+
+body
+{
+background-color:rgb(0, 225, 255);
+color:rgb(255, 255, 255);
+}
+.europe
+{
+width : 200px;
+height : 142px;
+}
+.asie
+{
+width : 280px;
+height : 189px;
+}
+.afrique
+{
+width : 200px;
+height : 113px;
+}
+.amerique_nord
+{
+width : 280px;
+height : 134x;
+}
+.amerique_sud
+{
+width : 280px;
+height : 61x;
+}
+.caraibes
+{
+width : 280px;
+height : 241x;
+}
+.oceanie
+{
+width : 280px;
+height : 280px;
+}
+.marque
+{
+width : 280px;
+height : 187px
+}
+.titre
+{
+font-size : xx-large;
+}

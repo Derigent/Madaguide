@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style5.css">
+    <title>La Martinique</title>
+    <script type="text/javascript" src="infobulle.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    
+
+<header class="main-head">
+    <nav>
+        <h1 id="logo"> <a href="madaguide.html">MadaGuide</a></h1>
+        <ul>
+            <li><a href="communes.html">Les Communes</a></li>
+            <li><a href="utilitaires.html">Utilitaires</a></li>
+            <li><a href="pourquoi.html">To-Do list</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>La Martinique</h2>
+    <h3>L'île aux fleurs</h3>
+    <button class="bouton"><a href ="#table">La Martinique en quelques mots</a></button>
+</section>
+
+<main>
+    <div class="btn">
+        <img src="Images/flèche1.png" alt="Flèche" class="icone">
+        <script>const btn = document.querySelector('.btn');
+  
+          btn.addEventListener('click', () => {
+          
+              window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth"
+              })
+          
+          })</script>
+        </div>
+ 
+ <h3 class="titre" id="table">La Martinique en quelques mots</h3>
+ <br>
+ <p>MadaGuide a collecté pour vous quelques informations clés sur l'île aux fleurs, la perle des Caraïbes.</p>
+ <p>MadaGuide vous propose donc de découvrir :</p>
+ <br>
+ <ul style="list-style-type: circle">
+    
+    <li class="tab"><a href="#monnaie"> Sa Monnaie</a></li>
+    <li class="tab"><a href="#fuseau_h">Son Fuseau horaire</a></li>
+    <li class="tab"><a href="#geo">Sa Géographie</a></li>
+    <li class="tab"><a href="#culture">Sa Culture</a></li>
+    <li class="tab"><a href="#meteo">Son Climat</a></li>
+    <li class="tab"><a href="#faune_et_flore">Sa Faune et sa flore</a></li>
+    
+ </ul>
+ <br>
+
+ <div id="monnaie"><h3 class="titre">Sa Monnaie</h3><br>
+ <p>La Martinique, étant un département d'Outre-Mer rattaché à la France, elle utilise l'euro (€) comme monnaie.</p>
+ </div>
+ <br>
+ <div id="monnaie"><h3 class="titre">Son Fuseau horaire</h3><br>
+ <p>La Martinique a un fuseau horaire de GMT-4.</p>
+ <br>
+ </div>
+ <div id="geo"><h3 class="titre">Sa Géographie</h3><br>
+ <p>La Martinique a une superficie de 1060 km².</p>
+ <br>
+ <p>Elle mesure 80 km dans sa plus grande longueur et 39 km dans sa plus grande largeur. Au nord de l'île, <a class="info" href="#">La Montagne Pelée<span><img src="Images/montagne p.jpg" class="image" /></span></a>
+    en est le point culminant (1.397 m).</p>
+ <br>
+ <p>Forêts denses, rivières et cascades caractérisent le Nord et feront le bonheur des randonneurs.</p>
+ <br>
+ <p>Le centre plus industrialisé sera lui le paradis de collectionneurs de souvenirs et d'artisanat local.</p>
+ <br>
+ <p>Au sud, de magnifiques plages et des décors de cartes postales attendent les amoureux de farniente.</p>
+
+ </div>
+ <br>
+ <div id="culture"><h3 class="titre">Sa Culture</h3><br>
+ <p>La population de la Martinique est « métissée ». Cette diversité résulte du métissage issu du mode de peuplement de l'île, en relation avec l'Histoire et la colonisation : amérindiens, européens, africains, indiens, levantins et asiatiques. Environ un quart de la population vit dans le chef-lieu, Fort-de- France.</p>
+ <br>
+ <p>La langue officielle est le français, mais tous les martiniquais parlent le créole, issu de la rencontre entre le vieux français, l'anglais, les dialectes africains et de la survivance de termes amérindiens.</p>
+ <br>
+ <p>Son héritage d'artisanat, sa littérature riche d'écrivains de renom et de grands poètes, la musique et la danse, l'art de vivre et la gastronomie font de la Martinique une terre de tradition et de culture.</p>
+ <br>
+ <p>En Martinique, les confessions religieuses sont très nombreuses, mais le catholicisme domine.</p>
+ <br>
+ <p>Chaque année, en Martinique, il y a plusieurs évènements importants qui font parties de la culture Martiniquaise comme le Tour des Yoles ou le Carnaval de la Martinique.</p>
+ </div>
+ <br>
+ <div id="meteo"><h3 class="titre">Son Climat</h3><br>
+ <br> 
+ <p>Dotée d’un climat tropical, la Martinique connait deux saisons : la saison sèche ensoleillée aux températures douces comprises entre 23°C et 25°C et la saison humide avec des températures plus élevées.</p>
+ <br>
+ <p>Venues de l'est et du nord-est, des brises régulières, les alizés, rafraîchissent l'atmosphère en permanence.</p>
+ <br>
+ </div>
+ <br>
+ <div id="faune_et_flore"><h3 class="titre">Sa faune et sa flore</h3><br>
+ <p>Cette île tropicale, est couverte de somptueuses forêts tropicales, savanes, de fruits exotiques, et de fleurs, sans oublier les palétuviers de la mangrove. L'ensemble fait de l'île un extraordinaire jardin exotique.</p>
+ <br>
+ <p>La faune, essentiellement composée d'oiseaux, de poissons et de crustacés, s'enrichit également de petits lézards, les <a class="info" href="#">« mabouyas »<span><img src="Images/mabouya.jpg" class="image" /></span></a> et les <a class="info" href="#">« anolis »<span><img src="Images/anolies.jpg" class="image" /></span></a>, <a class="info" href="#">d'iguanes<span><img src="Images/iguanes.jpg" class="image" /></span></a> et de <a class="info" href="#">serpents trigonocéphales<span><img src="Images/trigonocéphale.jpg" class="image" /></span></a> spécifiques à la Martinique. Le <a class="info" href="#">« manicou »<span><img src="Images/manikou.jpg" class="image" /></span></a> (sarigue) est un petit mammifère endémique de l'ordre des marsupiaux. La <a class="info" href="#">mangouste<span><img src="Images/mangouste mada.jpeg" class="image" /></span></a>, en revanche, a été introduite par l'homme pour combattre les serpents.</p>
+ </div>
+
+ 
+
+ 
+</main>
+
+</body>
+</html>

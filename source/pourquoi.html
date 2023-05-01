@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style7.css">
+    <title>To do list</title>
+    <script type="text/javascript" src="infobulle.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    
+
+<header class="main-head">
+    <nav>
+        <h1 id="logo"> <a href="madaguide.html">MadaGuide</a></h1>
+        <ul>
+            <li><a href="martinique.html">La Martinique</a></li>
+            <li><a href="communes.html">Les Communes</a></li>
+            <li><a href="utilitaires.html">Utilitaires</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Les coups de coeur</h2>
+    <h3>de MadaGuide</h3>
+    <button><a href="#table">A faire ou à voir impérativement en Martinique</a></button>
+</section>
+
+<main>
+    <div class="btn">
+        <img src="Images/flèche1.png" alt="Flèche" class="icone">
+        <script>const btn = document.querySelector('.btn');
+  
+          btn.addEventListener('click', () => {
+          
+              window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth"
+              })
+          
+          })</script>
+        </div>
+ 
+
+ <p id="table">Il y a beaucoup de raisons de visiter la Martinique : ses innombrables richesses, sa gastronomie savoureuse et exotique, ses plages idylliques, ses sites naturels grandioses, l'incroyable diversité de sa flore, sa culture riche et métissée...</p>
+ <br>
+ <p>Sur cette page, nous vous présenterons quelques lieux et évènements qui sont intéressants, mêmes importants, à voir lors d'un voyage sur l'Île aux fleurs.</p>
+ <br>
+ <div id="conteneur">
+<ul>
+    <li><a href="#tdy">Le Tour des Yoles</a></li>
+    <li><a href="#carnaval">Le Carnaval de la Martinique</a></li>
+    <li><a href="#mont">La Montagne-Pelée</a></li>
+    <li><a href="#rhum">Les Distilleries</a></li>
+    <li><a href="#plongée">Plongées sous-marines</a></li>
+    <li><a href="#buggy">Buggy</a></li>
+    <li><a href="#plage">Les Plages</a></li>
+    <li><a href="#jardin">Le Jardin de Balata</a></li>
+    <li><a href="#musee">Les Musées</a></li>
+    <li><a href="#danse">Les Danses traditionelles</a></li>
+</ul>
+ </div>
+ <br>
+<div id="tdy"><h3 class="titre">Le Tour des Yoles</h3><br>
+    <br>
+    <p>Le tour des yoles rondes de la Martinique est une régate qui existe depuis plus d'une trentaine d'années et qui se déroule pendant une semaine sur un parcours de sept étapes.</p>
+    <br>
+    <p>Bateaux à voile initialement conçues pour la pêche, les Yoles sont désormais utilisées dans des régates sportives autour de l'ile.</p>
+    <p>Les Yoles sont dites Rondes car elles ne possèdent pas de quilles comme la plupart des bateaux à voiles. Les équipiers, les Yoleurs, se perchent donc sur des Bwa dressés afin de compenser la force du vent.</p>
+    <br>
+    <p>L'engouement populaire pour cet événement nautique est sans pareil sur l'île.</p>
+    <br>
+    <p>Chaque équipage possède ses supporters qui n'hésitent pas à venir nombreux soutenir leurs favoris, d'autres viennent admirer le majestueux ballet des bateaux aux voiles multicolores.</p>
+    <br>
+    <p>Le Tour de la Martinique des Yoles Rondes est l'occasion pour tous de faire la fête : des animations diverses existent dans les villes de départ et d'arrivée d'étapes et une partie de la population embarque à bord de bateaux suiveurs afin d'être au plus près de l'action.</p>
+    <br>
+    <p>Ci dessous un petit diaporama avec quelques images et vidéos du Tour des Yoles :</p>
+    <p>(Veuillez cliquer sur un nombre pour débuter le diaporama)</p>
+   
+    <div class="cadre-diapo">
+       <script>var diaporama = 1;
+           affichage(diaporama);
+           
+           function boutons(n) {
+             affichage(diaporama += n);
+           }
+           
+           function actifIndic(n) {
+             affichage(diaporama = n);
+           }
+           
+           function affichage(n) {
+             var i;
+             var diapoImg = document.getElementsByClassName("diapo");
+             var indic = document.getElementsByClassName("demo");
+             if (n > diapoImg.length) {diaporama = 1}    
+             if (n < 1) {diaporama = diapoImg.length}
+             for (i = 0; i < diapoImg.length; i++) {
+                
+                diapoImg[i].style.opacity = "0";
+             }
+             for (i = 0; i < indic.length; i++) {
+                indic[i].className = indic[i].className.replace(" numeros", "");
+             }
+             diapoImg[diaporama-1].style.opacity = "1";    
+             indic[diaporama-1].className += " numeros";
+           }
+           </script>
+       <img class="diapo" src="Images/yoles-rondes-tour.jpg" alt>
+       <img class="diapo" src="Images/tour-1.jpg" alt>
+       <img class="diapo" src="Images/le_tour_des_yoles.jpg" alt>
+       <img class="diapo" src="Images/tour yoles.jpg" alt>
+       <button class="precedent" aria-label="précédent" onclick="boutons(-1)">❮</button>
+       <button class="suivant" aria-label="suivant" onclick="boutons(1)">❯</button>
+       </div>
+       <div class=cadre-demo>
+       <button class="demo" onclick="actifIndic(1)">1</button> 
+       <button class="demo" onclick="actifIndic(2)">2</button> 
+       <button class="demo" onclick="actifIndic(3)">3</button>
+       <button class="demo" onclick="actifIndic(4)">4</button>
+       </div>    
+       <br>
+       <div class="video">
+       <iframe width="600" height="315" src="https://www.youtube.com/embed/n3uzqsGPf2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       <br>
+       <iframe width="600" height="315" src="https://www.youtube.com/embed/IpXmc_-r_5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       </div>
+</div>
+   <br>
+<div id="carnaval"><h3 class="titre">Le Carnaval de la Martinique</h3><br>
+      <br>
+      <p>En Martinique, le Carnaval est une tradition et un très évènement synonymes de la fête et la bonne humeur... avec beaucoup d'imagination et un brin de folie !.</p>
+      <br>
+      <p>Contrairement au traditionnel calendrier catholique, il ne prend pas fin le Mardi gras mais le Mercredi des Cendres, tout comme en Guadeloupe et en Guyane. En revanche, il commence bien plus tôt que prévu : dès Noël passé, nous commençons à entendre par ci par là l'entrainement des parades d'orchestre de rue ! Officiellement, il dure 4 jours.</p>
+      <br>
+      <p>Cet événement est né pendant la colonisation, résultant de la rencontre des cultures africaines et européennes. Il a principalement lieu à Saint Pierre, ex capitale de la Martinique, jusqu'en 1902. En effet, suite à la tragique erruption volcanique de la Montagne Pelée, qui détruisit la ville, la tradition perdura et migra à Fort de France, nouvelle capitale.</p>
+      <br>
+      <p>Le Carnaval commence le samedi soir précédant le Mercredi des Cendres, dans les fêtes costumées qui animent la soirée. Mais c’est surtout le Dimanche que le carnaval se met en marche.</p>
+      <p>C’est le jour de l’apparition de la Reine du Carnaval, des premiers groupes à pied ou encore des orchestres de rue dont la musique, les costumes et la chorégraphie provoquent l’enchantement des spectateurs et des carnavaliers qui les suivent en dansant.</p>
+      <br>
+      <p>Le dimanche est aussi le jour où on voit apparaître les premières bradjaks, vieilles voitures, re-peintes en couleurs vives et surtout habillées de slogans orientés vers la critique de la société de consommation.</p>
+      <br>
+      <p>Il y a aussi la présentation de Vaval ou Bwabwa géant. Vaval représente généralement une situation plutôt négative ou mal vécue ayant marqué l'année, exposée de façon dérisoire. Par exemple en 2014 il s'agissait d'un moustique, faisant référence au pic épidémique du chikungunya. </p>
+      <br>
+      <p>Le Lundi Gras commence tôt le matin par le vidé en pyjama qui réunit les amateurs du vidé du matin et certains danseurs tardifs qui, à la sortie des zouks, vont poursuivre la fête dans les rues, aux sons des orchestres. Le costume approprié est le pyjama, mais certains hommes n’hésitent à enfiler une chemise de nuit dans l’esprit carnavalesque de l’inversion. Après le vidé, certains iront déguster le boudin créole précédé du décollage ( première goutte d’alcool absorbée le matin à jeun ).</p>
+      <br>
+      <p>Le Lundi Gras représente le mariage burlesque, ou pour résumer : le traversissement. Les femmes se déguisent en hommes et vice versa en tenue de mariage. L'imagination bat son plein, on fait les choses en grand, on s'en donne à coeur joie  et c'est généralement très drôle !</p>
+      <br>
+      <p>Le Mardi Gras est le jour de sortie des diables rouges. Impressionnants avec leurs masques à miroirs et à cornes, symbolisant respectivement la connaissance et l’abondance.</p>
+      <br>
+      <p>Les carnavaliers portent ce masque avec des cornes de bovidé, un grand manteau rouge constellé de petits miroirs juxtaposés, ainsi qu'une queue de bœuf. Ils se précipitent dans la foule et effraient les enfants : une sorte de terreur s’empare de la foule quand il apparaît.</p>
+      <p>C'est LE jour de fête du carnaval.</p>
+      <br>
+      <p>Enfin, le mercredi des cendres est le jour du deuil. En effet, Vaval est brûlé en début de soirée. Le Dress code est donc le noir et blanc, la couleur du deuil étant le blanc dans la Caraïbe mais le noir en occident.</p> 
+      <br>
+      <p>Le Roi Vaval a beaucoup d’enfants et de maîtresses, et les femmes de Vaval – souvent des hommes en tenue féminines – se transforment en pleureuses, des cris de douleur feinte retentissent dans les rues. À la fin de la journée, le corps de Vaval est brûlé et ses cendres dispersées.</p>
+      <br>
+      <p>Tous s’apprêtent alors à se rendre aux dernières soirées du Carnaval en tenue de deuil, pour danser et chanter les louanges de Vaval.</p>
+      <br>
+      <p>Ci dessous un petit diaporama avec quelques images du Carvanal de la Martinique 2023 :</p>
+      <p>(Veuillez cliquer 4 fois sur la flèche droite pour débuter le diaporama)</p>
+     
+      <div class="cadre-diapo">
+         <script>var diaporama = 1;
+             affichage(diaporama);
+             
+             function boutons(n) {
+               affichage(diaporama += n);
+             }
+             
+             function actifIndic(n) {
+               affichage(diaporama = n);
+             }
+             
+             function affichage(n) {
+               var i;
+               var diapoImg = document.getElementsByClassName("diapo");
+               var indic = document.getElementsByClassName("demo");
+               if (n > diapoImg.length) {diaporama = 1}    
+               if (n < 1) {diaporama = diapoImg.length}
+               for (i = 0; i < diapoImg.length; i++) {
+                  
+                  diapoImg[i].style.opacity = "0";
+               }
+               for (i = 0; i < indic.length; i++) {
+                  indic[i].className = indic[i].className.replace(" numeros", "");
+               }
+               diapoImg[diaporama-1].style.opacity = "1";    
+               indic[diaporama-1].className += " numeros";
+             }
+             </script>
+         <img class="diapo" src="Images/lundi gras.jpg" alt>
+         <img class="diapo" src="Images/mardi gras.jpg" alt>
+         <img class="diapo" src="Images/mercredi.jpg" alt>
+         <img class="diapo" src="Images/vaval2023.jpeg" alt>
+         <button class="precedent" aria-label="précédent" onclick="boutons(-1)">❮</button>
+         <button class="suivant" aria-label="suivant" onclick="boutons(1)">❯</button>
+         </div>
+         <div class=cadre-demo>
+         <button class="demo" onclick="actifIndic(1)">1</button> 
+         <button class="demo" onclick="actifIndic(2)">2</button> 
+         <button class="demo" onclick="actifIndic(3)">3</button>
+         <button class="demo" onclick="actifIndic(4)">4</button>
+        </div>    
+         <br>
+         <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9wp0pUrbe8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <br>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/SR79i9nSSC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+</div>
+    <br>
+<div id="mont"><h3 class="titre">La Montagne-Pelée</h3><br>
+        <br>
+        <p>Quand on vient en Martinique, on se doit de gravir la Montagne Pelée, point culminant de l’île aux Fleurs à 1397 mètres d’altitude.</p>
+        <br>
+        <p>C’est la Grande Dame du Nord, elle s’impose et domine le paysage en majesté, suscite la crainte mais par-dessus tout évoque le respect. Un lieu incontournable à visiter absolument lors de vos prochaines vacances en Martinique !</p>
+        <br>
+        <p>La Montagne Pelée est un site naturel à découvrir et redécouvrir. Avec plusieurs niveaux de randonnées, chacun peut l’explorer à son rythme.</p><p>Et pourquoi pas, s’accorder une pause, sous un abri de fraîcheur et apprécier le paysage ?</p><p>Un pique-nique en famille ou en duo sera le bienvenu dans ce cadre majestueux, mais attention à respecter et préserver cet environnement protégé !</p>
+        <br>
+        <p>Cette région est entrée dans l’Histoire de façon dramatique le matin du 8 mai 1902 lorsque l’éruption de la montagne Pelée, l’une des catastrophes naturelles les plus meurtrières du 20ième siècle, a tué les 30 000 habitants de la ville de Saint-Pierre en quelques minutes seulement.</p>
+        <br>
+        <p>Aujourd’hui, le musée Franck Perret à Saint-Pierre, la maison régionale du Volcan au Morne-Rouge ou le Centre de découverte des sciences de la terre, installé dans un bâtiment parasismique exceptionnel, vous démontrent les particularités des éruptions « péléennes ».</p>
+        <div>
+        <br>
+        <img src="Images/montagne pelee.jpg" class="montagne">
+        <br>
+        <img src="Images/montagne p.jpg" class="montagne">
+</div>
+    <br>
+<div id="rhum"><h3 class="titre">Les Distilleries</h3><br>
+        <p>En Martinique, il y a de nombreuses Distilleries.</p> 
+        <br>
+        <p>Nous vous mettons à dispositions une carte contenant toutes les distilleries de Martinique</p>
+        <br>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1rZ996oVrgZzbsVTkXncXwfxJ90m2jjk&ehbc=2E312F" width="640" height="480"></iframe>  
+</div>
+    <br>
+<div id="plongée"><h3 class="titre">Plongées sous-marines</h3><br>
+        <p>En Martinique, il y a beaucoup de lieu adapté pour la plongées sous-marines.</p> 
+        <br>
+        <img src="Images/plongee.jpg">
+        <br>
+        <p>Nous vous mettons à dispositions une carte contenant des clubs et centres de plongées de la Martinique</p>
+        <br>
+        <iframe src="https://www.google.com/maps/d/embed?mid=14kD5_-JJT0hVfhigCtLAbstTNS08NOI&hl=fr&ehbc=2E312F" width="640" height="480"></iframe>
+</div>
+    <br>
+<div id="buggy"><h3 class="titre">Buggy</h3><br>
+        <p>En Martinique, le buggy est une activité très agréable à faire afin d'apprécier la vue et le paysage</p> 
+        <br>
+        <img src="Images/quad-martinique.jpeg">
+        <br>
+        <p>Nous vous mettons à dispositions des liens sur d'autre sites qui développent un peu plus le sujet.</p>
+        <br>
+        <div><p>Les liens : <a href="https://www.voyage-martinique.fr/quad-martinique.html">https://www.voyage-martinique.fr/quad-martinique.html</a></p>
+        <br>
+        <p><a href="https://www.martinique.org/les-plages-de-martinique">https://www.martinique.org/les-plages-de-martinique</a></p>
+        <br>
+        <p><a href="https://www.bellemartinique.com/activites-loisirs//buggy-quad-trial/rando-buggy-martinique/">https://www.bellemartinique.com/activites-loisirs//buggy-quad-trial/rando-buggy-martinique/</a></p>
+        <br>
+        <p><a href="https://www.tripadvisor.fr/Attraction_Review-g147330-d21170962-Reviews-BUGGY_Quad_Martinique-Le_Diamant_Arrondissement_of_Le_Marin_Martinique.html">https://www.tripadvisor.fr/Attraction_Review-g147330-d21170962-Reviews-BUGGY_Quad_Martinique-Le_Diamant_Arrondissement_of_Le_Marin_Martinique.html</a></p>
+
+</div>
+    <br>
+<div id="plage"><h3 class="titre">Plages</h3><br>
+        <p>En Martinique, Il y a une très grandes diversité de plages, chacunes ayant leurs caractéristique unique : sable fin blanc ou noir, végétation vierge ou à proximité des restaurants locaux, routes sinueuses bordées de nature sauvage...</p> 
+        <br>
+        <p>Voici quelques photos de belles plages en Martinique:</p>
+        <br>
+        <img class="plage" src="Images/plage-Anse-darlet.jpg">
+        <br>
+        <img class="plage" src="Images/plage diamant.jpg">
+        <br>
+        <img class="plage" src="Images/plage1.jpg">
+        <br>
+        <img class="plage" src="Images/plage0.jpg"> 
+        <br>
+        <p>Nous vous mettons à dispositions un lien menant sur le site de la Martinique et qui parle des plages de l'île.</p>
+        <br>
+        <p>Le lien : <a href="https://www.martinique.org/les-plages-de-martinique">https://www.martinique.org/les-plages-de-martinique</a></p>
+        <br>
+        
+</div>
+    <br>
+<div id="jardin"><h3 class="titre">Le Jardin de Balata</h3><br>
+        <br>
+        <p>Le jardin de Balata est un jardin botanique privé situé à 10 kilomètres au nord du centre ville de Fort-de-France, route de Balata (vers Le Morne-Rouge), au bord de la route de la Trace, en Martinique.</p>
+        <br>
+        <p>Commencé en 1982 par son propriétaire, Jean-Philippe Thoze, grâce à sa collection de plantes personnelles, il a été ouvert au public le 19 avril 1986. Horticulteur passionné et créateur du jardin, Jean-Philippe Thoze a réuni une magnifique et exceptionnelle collection d’essences tropicales : des anthuriums, des hibiscus, des nymphéas exotiques, des roses de porcelaine, des héliconias, des pandanus panaché ou bien encore des dracénas et des balisiers.</p>
+        <br>
+        <p>Le jardin est ensuite acheté en 2008 par le Tropical Forest Park Group, propriété de Franck et Angélique Chaulet, qui comprend aussi le Zoo de Guadeloupe et le Zoo de Guyane. En 2014, ce groupe s'enrichit du Zoo de Martinique, crée sur l'Habitation Anse Latouche.</p>
+        <br>
+        <p>Voici quelques photos du Jardin de Balata :</p>
+        <br>
+        <img src="Images/jardin de balata.jpg" class="jardin"> 
+        <br>
+        <img src="Images/jardin 2.jpg" class="jardin">
+        <br>
+        <img src="Images/jardin3.jpg" class="jardin">
+        <br>
+        <p>Et voici le lien du site officiel du Jardin de Balata : <a href="https://www.jardindebalata.fr">https://www.jardindebalata.fr</a></p>
+</div>
+    <br>
+<div id="musee"><h3 class="titre">Musées</h3><br>
+        <br>
+        <p>Pour découvrir les trésors de la Martinique, les vestiges du passé et les richesses du présent, venez visiter les magnifiques musées de la Martinique.</p>
+        <br>
+        <p>Voici quelques photos de musée :</p>
+        <br>
+        <img src="Images/memo_1902.jpg" class="musee">
+        <br>
+        <img src="Images/musee de la banane.jpg" class="musee">
+        <br>
+        <br>
+        <p>Et voici la carte intéractive sur les musées de la Martinique :</p><br>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1edGf-karPD18mt9m3Ry8H02L1YjX8ng&ehbc=2E312F" width="640" height="480"></iframe>
+</div>
+    <br>
+<div id="danse"><h3 class="titre">Danses traditionelles</h3><br>
+        <br>
+        <p>Pour les amateurs de danses , vous serez émerveillés et par la diversité des danses locales. Si vous le souhaitez, vous pourrez être initiés à la pratique de ces danses qui trouvent la plupart leurs fondements depuis la période de l'esclavage.</p>
+        <br>
+        <p>Sur ces quelques extraits, vous aurez un aperçu de deux danses locales célèbres: le bèlè et la biguine.</p>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VGW-haqHwBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4>Le "bèlè"</h4>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gQFtOZeDnVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h4>La "biguine"</h4>
+</div>
+
+   
+
+ 
+</main>
+
+</body>
+</html>
